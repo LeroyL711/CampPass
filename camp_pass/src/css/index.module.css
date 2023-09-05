@@ -1,0 +1,103 @@
+.indexBody {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url("../img/camping.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+.titleStyle { 
+  color: rgb(13, 194, 13);
+}
+
+.indexBtn {
+  margin: 10px 12px 10px 0;
+  background-color: #2b2b2b;
+  border: 1px solid #2b2b2b;
+}
+
+.indexBtn:hover {
+  background-color: #e8e3dd;
+  border: 1px solid #2b2b2b;
+  color: black;
+}
+
+.indexBtn:active {
+  background-color: hsl(195, 10%, 72%);
+  border: 1px solid #2b2b2b;
+  box-shadow: 0 0 1px 2px #95a4a9;
+}
+
+.indexCard {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+
+}
+
+.indexTitle {
+  color: rgb(255, 255, 255);
+  max-width: 800px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.indexDescription {
+  color: white;
+  max-width: 800px;
+  margin-top: 60px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.indexDescription + div {
+  margin: 50px 0;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.signupOrLogin {
+  max-width: 800px;
+}
+
+@media (max-width: 767px) {
+  html,
+  body {
+    height: auto;
+  }
+
+  .indexBody h1 {
+    text-align: center;
+  }
+
+  .indexBody h4 {
+    text-align: center;
+  }
+
+  h4 + div {
+    text-align: center;
+  }
+
+  .indexCard {
+    margin-left: 0px;
+    margin-top: 10px;
+    scale: 90%;
+  }
+
+  .indexTitle {
+    color: rgb(255, 255, 255);
+    max-width: 800px;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+  }
+}
